@@ -4,16 +4,20 @@
 - Risk
   - Unsecured use of passkey -- The public key of passkey may be used as the wallet private key
 
+- Status
+  
+  - Wait for joy.id confirm, and want to understand the purpose of using this design.
+  
 - Comment
   - joy.id uses passkey to sign the transaction, but the transaction is not actually signed through passkey. During the transaction signing process, joy.id recover passkey-p256 public key, and use the pubKey by signing it, and derives the user's private key by performing similar calculations:
 
     ```c
     PrivateKey = Hmac-sha512( sha256(pubKey || sha256(pubKey)), "Bitcoin seed")
     ```
-  
-  
+
+
     Because passkey's public key is not confidential as compared to the private key, there is a large possibility of leakage, and if the user's public key is leaked, all wallet assets created by the user in joy.id may be lost.
-  
+
 - Detail Step
 
   - Login:
@@ -70,3 +74,11 @@
      ![10](imgs/10.png)
      ![11](imgs/11.png)
      ![12](imgs/12.png)
+
+
+
+-- -
+   ![a0](imgs/a0.png)
+
+Source file:https://app.joy.id/assets/index-80f5b282.js or [index-80f5b282.js.zip](source/index-80f5b282.js.zip)
+
