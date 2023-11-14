@@ -1,2 +1,5 @@
 
 .DS_Store
+example-web/node_modules/
+example-web/ngrok
+example-web/package-lock.json
