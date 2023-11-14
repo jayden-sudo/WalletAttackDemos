@@ -16,6 +16,8 @@ When I was gathering information on security, I found that [owasp.org](https://c
 
 
 
+
+
 - [prototype pollution](https://portswigger.net/web-security/prototype-pollution)
 
   - [Creating object with Object.create(null)](https://medium.com/@pratiprati/creating-object-with-object-create-null-6f6a51de3a08)
@@ -34,8 +36,12 @@ When I was gathering information on security, I found that [owasp.org](https://c
 
 
 
+
+
 - [software supply chain attacks](https://www.crowdstrike.com/cybersecurity-101/cyberattacks/supply-chain-attacks/)
   - ‼️ Building Web with [LavaMoat](https://github.com/LavaMoat/LavaMoat) 
+
+
 
 
 
@@ -43,37 +49,40 @@ When I was gathering information on security, I found that [owasp.org](https://c
 
 
 
+
+
 - [Content Security Policy [Level 2]](https://www.w3.org/TR/CSP2/) [[Level 3](https://www.w3.org/TR/CSP3/)]
+  
   - [default-src](https://www.w3.org/TR/CSP3/#directive-default-src)
-
+  
     - Associated risk:
-
+  
       - [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-
+  
     - The default-src directive serves as a fallback for the other [fetch directives](https://www.w3.org/TR/CSP3/#fetch-directives)
-
+  
     - suggest:
-
+  
       - ```yaml
         default-src 'self';
         ```
     
   - [connect-src](https://www.w3.org/TR/CSP3/#directive-connect-src)
-
+  
     - Associated risk:
-
+  
       - [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-
+  
     - suggest:
-
+  
       - ```yaml
         connect-src 'self' https://*.someAPI.com;
         ```
     
   - [frame-src](https://www.w3.org/TR/CSP3/#directive-frame-src)
-
+  
     - Associated risk:
-
+  
       - [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
       - [UI redress attack](https://owasp.org/www-community/attacks/Clickjacking)
     
@@ -84,9 +93,9 @@ When I was gathering information on security, I found that [owasp.org](https://c
         ```
     
   - [frame-ancestors](https://www.w3.org/TR/CSP3/#directive-frame-ancestors)
-
+  
     - Associated risk:
-
+  
       - [UI redress attack](https://owasp.org/www-community/attacks/Clickjacking)
       
     - Refer: X-Frame-Options
@@ -100,9 +109,9 @@ When I was gathering information on security, I found that [owasp.org](https://c
         
     
   - [img-src](https://www.w3.org/TR/CSP3/#directive-img-src)
-
+  
     - Associated risk:
-
+  
       - [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
       - [UI redress attack](https://owasp.org/www-community/attacks/Clickjacking)
     
@@ -113,33 +122,33 @@ When I was gathering information on security, I found that [owasp.org](https://c
         ```
     
   - [media-src](https://www.w3.org/TR/CSP3/#directive-media-src)
-
+  
     - Associated risk:
-
+  
       - [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-
+  
     - suggest:
-
+  
       - ```shell
         media-src 'https://*';
         ```
     
   - [object-src](https://www.w3.org/TR/CSP3/#directive-object-src)
-
+  
     - Associated risk:
-
+  
       - [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-
+  
     - suggest:
-
+  
       - ```shell
         object-src 'self';
         ```
     
   - [script-src](https://www.w3.org/TR/CSP3/#directive-script-src)
-
+  
     - Associated risk:
-
+  
       - [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
       - [DOM Clobbering](https://domclob.xyz/domc_wiki/#overview)
     
@@ -150,17 +159,19 @@ When I was gathering information on security, I found that [owasp.org](https://c
         ```
     
   - [worker-src](https://www.w3.org/TR/CSP3/#directive-worker-src)
-
+  
     - Associated risk:
-
+  
       - [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-
+  
     - suggest:
-
+  
       - ```shell
         worker-src 'self';
         ```
     
+
+
 
 
 
@@ -178,7 +189,10 @@ When I was gathering information on security, I found that [owasp.org](https://c
         ```
         
 
-    
+
+
+
+
 
 - [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
 
@@ -193,7 +207,10 @@ When I was gathering information on security, I found that [owasp.org](https://c
         <link integrity="sha384-xxx"...
         ```
 
-    
+
+
+
+
 
 - postMessage origin
 
@@ -215,6 +232,8 @@ When I was gathering information on security, I found that [owasp.org](https://c
 
 
 
+
+
 - X-Content-Type-Options
 
   - Associated risk:
@@ -227,7 +246,10 @@ When I was gathering information on security, I found that [owasp.org](https://c
         X-Content-Type-Options: nosniff
         ```
 
-  
+
+
+
+
 
 - HTTP [Strict Transport Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security) (**HSTS**)
 
