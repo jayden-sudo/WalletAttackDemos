@@ -263,3 +263,18 @@ When I was gathering information on security, I found that [owasp.org](https://c
       ```
     
       
+
+
+
+# Refer
+1. [web security](https://infosec.mozilla.org/guidelines/web_security)
+2. [developer.mozilla.org - Web Security](https://developer.mozilla.org/en-US/docs/Web/Security)
+3. [cheatsheetseries.owasp.org - AJAX Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html)
+4. [portswigger.net - Prototype Pollution](https://portswigger.net/web-security/prototype-pollution)
+5. [medium.com - Creating object with Object.create(null)](https://medium.com/@pratiprati/creating-object-with-object-create-null-6f6a51de3a08)
+6. [developer.mozilla.org - Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
+7. [crowdstrike.com - Software Supply Chain Attacks](https://www.crowdstrike.com/cybersecurity-101/cyberattacks/supply-chain-attacks/)
+8. [github.com - LavaMoat](https://github.com/LavaMoat/LavaMoat)
+9. [cloudflare.com - DNS over TLS (DoT) or DNS over HTTPS (DoH)](https://www.cloudflare.com/learning/dns/dns-over-tls/)
+10. [w3.org - Content Security Policy [Level 2]](https://www.w3.org/TR/CSP2/)
+11. [w3.org - Content Security Policy [Level 3]](https://www.w3.org/TR/CSP3/)
